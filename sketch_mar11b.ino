@@ -40,7 +40,7 @@ void loop() {
 
     char msg[64] = "{\"eon\":{\"sensor\":"; // Formatting our message to be a JSON object
 
-        sprintf(msg + strlen(msg), "%d", analogRead(analogIn)); // Using sprintf to add our integer sensor reading
+        sprintf(msg + strlen(msg), "%d", analogRead(light)); // Using sprintf to add our integer sensor reading
 
       strcat(msg, "}}"); // Concatenating the two curly braces on the end
 
